@@ -2,7 +2,7 @@ export const products = [
   {
     id: 1,
     name: "Thai Basil Chicken",
-    price: 12.99,
+    price: 8.00,
     originalPrice: null,
     image: "/food/roozchickn.jpg",
     category: "asian",
@@ -13,8 +13,8 @@ export const products = [
   {
     id: 2,
     name: "Mediterranean Bowl",
-    price: 11.99,
-    originalPrice: 14.99,
+    price: 8.00,
+    originalPrice: null,
     image: "/food/sallad.jpg",
     category: "mediterranean",
     inStock: true,
@@ -24,7 +24,7 @@ export const products = [
   {
     id: 3,
     name: "Butter Chicken",
-    price: 13.99,
+    price: 8.00,
     originalPrice: null,
     image: "/food/roozchickn.jpg",
     category: "indian",
@@ -35,7 +35,7 @@ export const products = [
   {
     id: 4,
     name: "Beef Bulgogi",
-    price: 14.99,
+    price: 8.00,
     originalPrice: null,
     image: "/food/mix.jpg",
     category: "asian",
@@ -46,8 +46,8 @@ export const products = [
   {
     id: 5,
     name: "Chicken Tikka Masala",
-    price: 12.99,
-    originalPrice: 15.99,
+    price: 8.00,
+    originalPrice: null,
     image: "/food/roozchickn.jpg",
     category: "indian",
     inStock: true,
@@ -57,7 +57,7 @@ export const products = [
   {
     id: 6,
     name: "Teriyaki Salmon",
-    price: 15.99,
+    price: 8.00,
     originalPrice: null,
     image: "/food/mix.jpg",
     category: "asian",
@@ -68,7 +68,7 @@ export const products = [
   {
     id: 7,
     name: "Pasta Primavera",
-    price: 10.99,
+    price: 8.00,
     originalPrice: null,
     image: "/food/sallad.jpg",
     category: "italian",
@@ -79,8 +79,8 @@ export const products = [
   {
     id: 8,
     name: "Mexican Rice Bowl",
-    price: 11.99,
-    originalPrice: 13.99,
+    price: 8.00,
+    originalPrice: null,
     image: "/food/mix.jpg",
     category: "mexican",
     inStock: true,
@@ -90,7 +90,7 @@ export const products = [
   {
     id: 9,
     name: "Green Curry Shrimp",
-    price: 14.99,
+    price: 8.00,
     originalPrice: null,
     image: "/food/mix.jpg",
     category: "asian",
@@ -101,7 +101,7 @@ export const products = [
   {
     id: 10,
     name: "Chicken Alfredo",
-    price: 12.99,
+    price: 8.00,
     originalPrice: null,
     image: "/food/roozchickn.jpg",
     category: "italian",
@@ -112,8 +112,8 @@ export const products = [
   {
     id: 11,
     name: "Lamb Biryani",
-    price: 15.99,
-    originalPrice: 18.99,
+    price: 8.00,
+    originalPrice: null,
     image: "/food/mix.jpg",
     category: "indian",
     inStock: true,
@@ -123,7 +123,7 @@ export const products = [
   {
     id: 12,
     name: "Vegetable Stir Fry",
-    price: 9.99,
+    price: 8.00,
     originalPrice: null,
     image: "/food/sallad.jpg",
     category: "asian",
@@ -134,7 +134,7 @@ export const products = [
   {
     id: 13,
     name: "Sandwich Combo",
-    price: 13.99,
+    price: 8.00,
     originalPrice: null,
     image: "/food/pack sandich friese and salad.jpg",
     category: "american",
@@ -145,7 +145,7 @@ export const products = [
   {
     id: 14,
     name: "Classic Sandwich",
-    price: 9.99,
+    price: 8.00,
     originalPrice: null,
     image: "/food/sandichs.jpg",
     category: "american",
@@ -156,7 +156,7 @@ export const products = [
   {
     id: 15,
     name: "Kung Pao Chicken",
-    price: 12.99,
+    price: 8.00,
     originalPrice: null,
     image: "/food/roozchickn.jpg",
     category: "asian",
@@ -167,7 +167,7 @@ export const products = [
   {
     id: 16,
     name: "Dessert Special",
-    price: 7.99,
+    price: 8.00,
     originalPrice: null,
     image: "/food/desert.jpg",
     category: "dessert",

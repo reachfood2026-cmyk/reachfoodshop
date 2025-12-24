@@ -41,7 +41,6 @@ export const translations = {
     products: {
       title: 'Our Ready Meals',
       subtitle: 'Discover our selection of authentic, self-heating meals ready in minutes.',
-      discount: 'Get 20% off your first order!',
       addToCart: 'Add to Cart',
       viewAllMeals: 'View All Meals',
       save: 'Save',
@@ -51,8 +50,6 @@ export const translations = {
     // Features Section
     features: {
       ourPromise: 'Our Promise',
-      discountOffer: 'Get 40% off your first order',
-      learnMore: 'Learn more',
       qualityIngredients: 'Quality Ingredients',
       qualityIngredientsDesc: 'Premium ingredients sourced from trusted suppliers, ensuring every meal is packed with nutrition and flavor.',
       readyInMinutes: 'Ready in 3-5 Minutes',
@@ -364,7 +361,6 @@ export const translations = {
     products: {
       title: 'وجباتنا الجاهزة',
       subtitle: 'اكتشف مجموعتنا من الوجبات الأصيلة ذاتية التسخين الجاهزة في دقائق.',
-      discount: 'احصل على خصم 20% على طلبك الأول!',
       addToCart: 'أضف للسلة',
       viewAllMeals: 'عرض جميع الوجبات',
       save: 'وفر',
@@ -374,8 +370,6 @@ export const translations = {
     // Features Section
     features: {
       ourPromise: 'وعدنا',
-      discountOffer: 'احصل على خصم 40% على طلبك الأول',
-      learnMore: 'اعرف المزيد',
       qualityIngredients: 'مكونات عالية الجودة',
       qualityIngredientsDesc: 'مكونات فاخرة من موردين موثوقين، تضمن أن كل وجبة مليئة بالتغذية والنكهة.',
       readyInMinutes: 'جاهزة في 3-5 دقائق',

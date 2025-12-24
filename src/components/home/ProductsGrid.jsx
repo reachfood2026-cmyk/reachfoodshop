@@ -24,7 +24,6 @@ export default function ProductsGrid() {
           </h2>
           <p className="text-heading-light text-lg max-w-2xl mx-auto">
             {t('products.subtitle')}
-            <span className="text-primary font-medium"> {t('products.discount')}</span>
           </p>
         </div>
 

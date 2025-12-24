@@ -52,12 +52,6 @@ export default function FeaturesSection() {
             <h2 className="font-playfair text-3xl lg:text-4xl font-bold text-heading mb-3">
               {t('features.ourPromise')}
             </h2>
-            <p className="text-heading-light">
-              {t('features.discountOffer')}{' '}
-              <span className="text-primary font-medium underline cursor-pointer">
-                {t('features.learnMore')}
-              </span>
-            </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
