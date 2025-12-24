@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom';
+import { useLanguage } from '../../context/LanguageContext';
 
 export default function Hero() {
+  const { t, isRTL } = useLanguage();
+
   return (
     <section
       className="relative min-h-screen flex items-center overflow-hidden"

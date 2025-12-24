@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useCart } from '../../context/CartContext';
+import { useLanguage } from '../../context/LanguageContext';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -9,6 +10,7 @@ export default function Navbar() {
   const [isPagesOpen, setIsPagesOpen] = useState(false);
   const [isCurrencyOpen, setIsCurrencyOpen] = useState(false);
   const { cartCount, toggleCart, currency, setCurrency } = useCart();
+  const { t, language, toggleLanguage, isRTL } = useLanguage();
   const location = useLocation();
 
   useEffect(() => {
@@ -25,14 +27,14 @@ export default function Navbar() {
   }, [location]);
 
   const navLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'Shop', path: '/shop' },
+    { name: t('nav.home'), path: '/' },
+    { name: t('nav.shop'), path: '/shop' },
   ];
 
   const pagesLinks = [
-    { name: 'About Us', path: '/about' },
-    { name: 'Our Story', path: '/story' },
-    { name: 'FAQ', path: '/faq' },
+    { name: t('nav.aboutUs'), path: '/about' },
+    { name: t('nav.ourStory'), path: '/story' },
+    { name: t('nav.faq'), path: '/faq' },
   ];
 
   return (
@@ -84,7 +86,7 @@ export default function Navbar() {
                 onMouseLeave={() => setIsPagesOpen(false)}
               >
                 <button className="flex items-center gap-1 px-5 py-2 text-[15px] font-medium text-heading hover:text-primary transition-colors duration-300">
-                  Pages
+                  {t('nav.pages')}
                   <span
                     className={`text-xs transition-transform duration-300 ${
                       isPagesOpen ? 'rotate-180' : ''
@@ -120,7 +122,7 @@ export default function Navbar() {
                 to="/contact"
                 className="px-5 py-2 text-[15px] font-medium text-heading hover:text-primary transition-colors duration-300"
               >
-                Contact
+                {t('nav.contact')}
               </Link>
             </div>
 
@@ -151,6 +153,15 @@ export default function Navbar() {
                     {cartCount}
                   </span>
                 )}
+              </button>
+
+              {/* Language Toggle */}
+              <button
+                onClick={toggleLanguage}
+                className="hidden sm:flex items-center gap-1 px-3 py-1.5 text-sm text-heading-light hover:text-primary transition-colors cursor-pointer rounded-full hover:bg-cream font-medium"
+                aria-label="Toggle language"
+              >
+                {language === 'en' ? 'العربية' : 'English'}
               </button>
 
               {/* Currency Selector */}
@@ -228,7 +239,7 @@ export default function Navbar() {
             <div className="relative">
               <input
                 type="text"
-                placeholder="Search for delicious meals..."
+                placeholder={t('nav.searchPlaceholder')}
                 className="w-full px-6 py-3 bg-cream rounded-full text-heading placeholder:text-heading-light/60 focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all"
               />
               <svg className="absolute right-5 top-1/2 -translate-y-1/2 w-5 h-5 text-heading-light" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
@@ -281,7 +292,7 @@ export default function Navbar() {
 
             <div className="pt-2 border-t border-heading/10">
               <p className="px-4 py-2 text-xs font-semibold text-heading-light uppercase tracking-wider">
-                Pages
+                {t('nav.pages')}
               </p>
               {pagesLinks.map((link, index) => (
                 <Link
@@ -298,12 +309,41 @@ export default function Navbar() {
               to="/contact"
               className="block px-4 py-3 text-lg font-medium text-heading hover:bg-cream hover:text-primary rounded-xl transition-all"
             >
-              Contact
+              {t('nav.contact')}
             </Link>
+
+            {/* Mobile Language Toggle */}
+            <div className="pt-4 border-t border-heading/10">
+              <p className="px-4 py-2 text-xs font-semibold text-heading-light uppercase tracking-wider">
+                {language === 'en' ? 'Language' : 'اللغة'}
+              </p>
+              <div className="flex gap-2 px-4">
+                <button
+                  onClick={() => { if (language !== 'en') toggleLanguage(); }}
+                  className={`flex-1 py-2 rounded-lg text-sm font-medium transition-all ${
+                    language === 'en'
+                      ? 'bg-primary text-white'
+                      : 'bg-cream text-heading-light hover:text-primary'
+                  }`}
+                >
+                  English
+                </button>
+                <button
+                  onClick={() => { if (language !== 'ar') toggleLanguage(); }}
+                  className={`flex-1 py-2 rounded-lg text-sm font-medium transition-all ${
+                    language === 'ar'
+                      ? 'bg-primary text-white'
+                      : 'bg-cream text-heading-light hover:text-primary'
+                  }`}
+                >
+                  العربية
+                </button>
+              </div>
+            </div>
 
             <div className="pt-4 border-t border-heading/10">
               <p className="px-4 py-2 text-xs font-semibold text-heading-light uppercase tracking-wider">
-                Currency
+                {t('nav.currency')}
               </p>
               <div className="flex gap-2 px-4">
                 <button
