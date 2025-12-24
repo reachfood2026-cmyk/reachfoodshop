@@ -247,8 +247,8 @@ export const translations = {
       innovationDevDesc: 'Developed eco-friendly packaging and 12+ health recovery food recipes',
       researchPub: 'Research Publication',
       researchPubDesc: 'Published research on unique recipes & sustainable agriculture for harsh environments',
-      globalEvents: 'Global Events',
-      globalEventsDesc: 'Served at major global events including Hajj, Umrah, and the World Cup, providing sustainable and culturally authentic meals',
+      globalEvents: '2026–2027 Global Events',
+      globalEventsDesc: 'Aiming to serve at major global events including Hajj, Umrah, and the World Cup, providing sustainable and culturally authentic meals',
     },
 
     // Categories
@@ -567,8 +567,8 @@ export const translations = {
       innovationDevDesc: 'طورنا تغليفاً صديقاً للبيئة وأكثر من 12 وصفة للتعافي الصحي',
       researchPub: 'نشر بحثي',
       researchPubDesc: 'نشرنا بحثاً عن وصفات فريدة والزراعة المستدامة للبيئات القاسية',
-      globalEvents: 'فعاليات عالمية',
-      globalEventsDesc: 'نتطلع لخدمة فعاليات عالمية كبرى تشمل الحج والعمرة وكأس العالم، مقدمين وجبات مستدامة وأصيلة ثقافياً',
+      globalEvents: 'فعاليات عالمية 2026–2027',
+      globalEventsDesc: 'نطمح لخدمة فعاليات عالمية كبرى تشمل الحج والعمرة وكأس العالم، مقدمين وجبات مستدامة وأصيلة ثقافياً',
     },
 
     // Categories
