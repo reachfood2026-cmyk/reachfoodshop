@@ -89,22 +89,13 @@ export default function ProductCheckout() {
               )}
             </div>
 
-            {/* Food Images Gallery */}
-            <div className="grid grid-cols-2 gap-4">
-              <div className="relative aspect-square rounded-2xl overflow-hidden bg-gray-900">
-                <img
-                  src="/food/food1.jpg"
-                  alt="Food preparation 1"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="relative aspect-square rounded-2xl overflow-hidden bg-gray-900">
-                <img
-                  src="/food/food2.jpg"
-                  alt="Food preparation 2"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+            {/* Food Image */}
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gray-900">
+              <img
+                src="/food/roozchickn.jpg"
+                alt="Food preparation"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 
