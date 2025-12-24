@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
 import CartDrawer from './components/cart/CartDrawer'
+import FloatingWhatsApp from './components/FloatingWhatsApp'
 import Home from './pages/Home'
 import Shop from './pages/Shop'
 import About from './pages/About'
@@ -13,6 +14,7 @@ function App() {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <CartDrawer />
+      <FloatingWhatsApp />
 
       <div className="flex-1">
         <Routes>
