@@ -47,25 +47,31 @@ export default function Footer() {
             </p>
             <div className="mt-6 flex items-center gap-4">
               <a
-                href="#"
+                href="https://www.facebook.com/reachfood"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 flex items-center justify-center rounded-full bg-white shadow-md text-heading-light hover:text-primary hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
                 aria-label="Facebook"
               >
                 <span className="text-sm font-bold">f</span>
               </a>
               <a
-                href="#"
+                href="https://x.com/reachfood"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 flex items-center justify-center rounded-full bg-white shadow-md text-heading-light hover:text-primary hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-                aria-label="Twitter"
+                aria-label="X"
               >
                 <span className="text-sm font-bold">𝕏</span>
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/reachfood2025"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 flex items-center justify-center rounded-full bg-white shadow-md text-heading-light hover:text-primary hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
                 aria-label="Instagram"
               >
-                <span className="text-sm font-bold">in</span>
+                <span className="text-sm font-bold">IG</span>
               </a>
             </div>
           </div>
