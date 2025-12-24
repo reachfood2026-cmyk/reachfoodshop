@@ -1,9 +1,30 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../../context/LanguageContext';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   const { t, isRTL } = useLanguage();
+  const [email, setEmail] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [subscribed, setSubscribed] = useState(false);
+
+  const handleNewsletterSubmit = async (e) => {
+    e.preventDefault();
+    if (!email) return;
+
+    setIsSubmitting(true);
+
+    // Simulate API call
+    await new Promise(resolve => setTimeout(resolve, 1000));
+
+    setIsSubmitting(false);
+    setSubscribed(true);
+    setEmail('');
+
+    // Reset success message after 5 seconds
+    setTimeout(() => setSubscribed(false), 5000);
+  };
 
   const footerLinks = {
     shop: [
@@ -145,17 +166,29 @@ export default function Footer() {
             <p className="text-heading-light mb-6">
               {t('footer.newsletterDesc')}
             </p>
-            <form className="flex flex-col sm:flex-row gap-3">
+
+            {subscribed && (
+              <div className="mb-6 p-4 bg-teal/10 border border-teal/20 rounded-2xl">
+                <p className="text-teal font-semibold">{t('footer.subscribeSuccess') || 'Successfully subscribed!'}</p>
+                <p className="text-heading-light text-sm mt-1">{t('footer.subscribeSuccessDesc') || 'Thank you for joining our newsletter.'}</p>
+              </div>
+            )}
+
+            <form onSubmit={handleNewsletterSubmit} className="flex flex-col sm:flex-row gap-3">
               <input
                 type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder={t('footer.emailPlaceholder')}
+                required
                 className="flex-1 px-6 py-3.5 bg-white rounded-full text-heading placeholder:text-heading-light/60 focus:outline-none focus:ring-2 focus:ring-primary/30 shadow-sm transition-all"
               />
               <button
                 type="submit"
-                className="px-8 py-3.5 bg-primary text-white font-semibold rounded-full hover:bg-primary-hover transition-all duration-300 hover:shadow-lg hover:shadow-primary/30 hover:-translate-y-0.5"
+                disabled={isSubmitting}
+                className="px-8 py-3.5 bg-primary text-white font-semibold rounded-full hover:bg-primary-hover transition-all duration-300 hover:shadow-lg hover:shadow-primary/30 hover:-translate-y-0.5 disabled:opacity-70 disabled:cursor-not-allowed"
               >
-                {t('footer.subscribe')}
+                {isSubmitting ? (t('footer.subscribing') || 'Subscribing...') : t('footer.subscribe')}
               </button>
             </form>
           </div>
