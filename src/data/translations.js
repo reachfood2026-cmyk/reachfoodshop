@@ -380,6 +380,67 @@ export const translations = {
       learnMission: 'Learn About Our Mission',
       contactUs: 'Contact Us',
     },
+
+    // FAQ Page
+    faq: {
+      title: 'Frequently Asked Questions',
+      subtitle: 'Everything you need to know about ReachFood self-heating meals',
+      generalTitle: 'General Questions',
+      productTitle: 'Product Information',
+      orderingTitle: 'Ordering & Delivery',
+      sustainabilityTitle: 'Sustainability',
+
+      // General Questions
+      q1: 'What is ReachFood?',
+      a1: 'ReachFood is an innovative food company that creates self-heating, ready-to-eat meals using cutting-edge technology. Our meals heat up to 65°C in just 3-5 minutes without needing a microwave, stove, or electricity - making nutritious, delicious food accessible anywhere.',
+
+      q2: 'How do self-heating meals work?',
+      a2: 'Our meals use a safe, eco-friendly heating technology. Simply activate the heating element by following the instructions on the package, and your meal will be hot and ready in minutes. The process is completely safe and requires no external power source.',
+
+      q3: 'Are ReachFood meals safe to eat?',
+      a3: 'Absolutely. All our meals are prepared using high-quality ingredients and follow strict food safety standards. The self-heating technology has been thoroughly tested and approved for safe use. Each meal is sealed to maintain freshness and quality.',
+
+      q4: 'How long do the meals stay fresh?',
+      a4: 'Our meals have a shelf life of 12-18 months when stored properly in a cool, dry place. The exact date is printed on each package. No refrigeration is required until after opening.',
+
+      // Product Information
+      q5: 'What cuisines do you offer?',
+      a5: 'We offer authentic meals from various cuisines including Asian, Indian, Mediterranean, and more. Our recipes are developed with chefs from around the world to ensure authentic flavors and traditional cooking methods.',
+
+      q6: 'Are the meals nutritious?',
+      a6: 'Yes! Our meals are designed by nutrition experts to provide balanced, complete nutrition. We use premium ingredients and ensure each meal contains quality proteins, healthy carbohydrates, and essential vitamins and minerals.',
+
+      q7: 'Do you offer vegetarian or vegan options?',
+      a7: 'Yes, we offer a variety of vegetarian options. We are continuously expanding our menu to include more dietary preferences. Check our shop page for the latest offerings and filter by dietary requirements.',
+
+      // Ordering & Delivery
+      q9: 'How do I place an order?',
+      a9: 'Simply browse our shop, add your favorite meals to your cart, and proceed to checkout. You will need to provide your delivery information and can pay cash on delivery.',
+
+      q10: 'What are the delivery times?',
+      a10: 'Standard delivery takes 2-3 business days within our service areas. We offer free shipping on orders over $50. You will receive a confirmation email with tracking information once your order ships.',
+
+      q11: 'Can I track my order?',
+      a11: 'Yes! Once your order is confirmed and shipped, you will receive an email with tracking details so you can monitor your delivery status.',
+
+      q12: 'What payment methods do you accept?',
+      a12: 'Currently, we accept cash on delivery. We are working on adding more payment options including credit cards and digital wallets in the near future.',
+
+      // Sustainability
+      q13: 'Is your packaging eco-friendly?',
+      a13: 'Yes! Sustainability is at the core of our mission. Our packaging is 100% recyclable and biodegradable. In fact, our packaging materials can even be planted to grow wildflowers, contributing to a circular economy.',
+
+      q14: 'How does ReachFood support sustainability?',
+      a14: 'We use locally sourced ingredients where possible, minimize food waste through precise portioning, and our packaging is designed to be part of the natural ecosystem. We are committed to reducing our environmental impact at every step of production.',
+
+      q15: 'What is your mission?',
+      a15: 'Our mission is to make nutritious, hot meals accessible to everyone, everywhere - regardless of circumstances. We started by addressing food insecurity in Madagascar and continue to innovate solutions for emergency relief, busy professionals, and families worldwide.',
+
+      stillHaveQuestions: 'Still have questions?',
+      contactSupport: 'Our support team is here to help. Reach out anytime.',
+      contactUs: 'Contact Us',
+      browseProducts: 'Browse Our Products',
+    },
   },
 
   ar: {
@@ -762,6 +823,67 @@ export const translations = {
       ctaDesc: 'انضم إلينا في مهمتنا لجعل الوجبات المغذية والمستدامة متاحة للجميع، في كل مكان.',
       learnMission: 'تعرف على مهمتنا',
       contactUs: 'تواصل معنا',
+    },
+
+    // FAQ Page
+    faq: {
+      title: 'الأسئلة الشائعة',
+      subtitle: 'كل ما تحتاج معرفته عن وجبات ريتش فود ذاتية التسخين',
+      generalTitle: 'أسئلة عامة',
+      productTitle: 'معلومات المنتج',
+      orderingTitle: 'الطلب والتوصيل',
+      sustainabilityTitle: 'الاستدامة',
+
+      // General Questions
+      q1: 'ما هي ريتش فود؟',
+      a1: 'ريتش فود هي شركة طعام مبتكرة تبتكر وجبات ذاتية التسخين جاهزة للأكل باستخدام تقنية متطورة. وجباتنا تسخن إلى 65 درجة مئوية في 3-5 دقائق فقط دون الحاجة لميكروويف أو موقد أو كهرباء - مما يجعل الطعام المغذي واللذيذ متاحاً في أي مكان.',
+
+      q2: 'كيف تعمل الوجبات ذاتية التسخين؟',
+      a2: 'تستخدم وجباتنا تقنية تسخين آمنة وصديقة للبيئة. ببساطة قم بتفعيل عنصر التسخين باتباع التعليمات على العبوة، وستكون وجبتك ساخنة وجاهزة في دقائق. العملية آمنة تماماً ولا تتطلب مصدر طاقة خارجي.',
+
+      q3: 'هل وجبات ريتش فود آمنة للأكل؟',
+      a3: 'بالتأكيد. جميع وجباتنا محضرة باستخدام مكونات عالية الجودة وتتبع معايير سلامة غذائية صارمة. تقنية التسخين الذاتي تم اختبارها بدقة والموافقة عليها للاستخدام الآمن. كل وجبة مغلقة للحفاظ على النضارة والجودة.',
+
+      q4: 'كم تبقى الوجبات طازجة؟',
+      a4: 'وجباتنا لها مدة صلاحية تتراوح بين 12-18 شهراً عند تخزينها بشكل صحيح في مكان بارد وجاف. التاريخ الدقيق مطبوع على كل عبوة. لا يلزم التبريد حتى بعد الفتح.',
+
+      // Product Information
+      q5: 'ما هي المطابخ التي تقدمونها؟',
+      a5: 'نقدم وجبات أصيلة من مطابخ متنوعة بما في ذلك الآسيوي والهندي والمتوسطي وغيرها. وصفاتنا طُورت مع طهاة من جميع أنحاء العالم لضمان النكهات الأصيلة وطرق الطهي التقليدية.',
+
+      q6: 'هل الوجبات مغذية؟',
+      a6: 'نعم! وجباتنا مصممة من قبل خبراء التغذية لتوفير تغذية متوازنة وكاملة. نستخدم مكونات فاخرة ونضمن أن كل وجبة تحتوي على بروتينات عالية الجودة، وكربوهيدرات صحية، وفيتامينات ومعادن أساسية.',
+
+      q7: 'هل تقدمون خيارات نباتية أو خالية من اللحوم؟',
+      a7: 'نعم، نقدم مجموعة متنوعة من الخيارات النباتية. نحن نوسع قائمتنا باستمرار لتشمل المزيد من التفضيلات الغذائية. تحقق من صفحة المتجر للحصول على أحدث العروض وفلتر حسب المتطلبات الغذائية.',
+
+      // Ordering & Delivery
+      q9: 'كيف أقوم بتقديم طلب؟',
+      a9: 'ببساطة تصفح متجرنا، أضف وجباتك المفضلة إلى السلة، وانتقل إلى الدفع. ستحتاج إلى تقديم معلومات التوصيل ويمكنك الدفع نقداً عند التسليم.',
+
+      q10: 'ما هي أوقات التوصيل؟',
+      a10: 'يستغرق التوصيل القياسي 2-3 أيام عمل داخل مناطق الخدمة لدينا. نقدم شحن مجاني على الطلبات فوق 50 دولار. ستتلقى رسالة تأكيد بالبريد الإلكتروني مع معلومات التتبع بمجرد شحن طلبك.',
+
+      q11: 'هل يمكنني تتبع طلبي؟',
+      a11: 'نعم! بمجرد تأكيد طلبك وشحنه، ستتلقى رسالة بريد إلكتروني مع تفاصيل التتبع حتى تتمكن من مراقبة حالة التوصيل.',
+
+      q12: 'ما هي طرق الدفع التي تقبلونها؟',
+      a12: 'حالياً، نقبل الدفع نقداً عند التسليم. نعمل على إضافة المزيد من خيارات الدفع بما في ذلك بطاقات الائتمان والمحافظ الرقمية في المستقبل القريب.',
+
+      // Sustainability
+      q13: 'هل تغليفكم صديق للبيئة؟',
+      a13: 'نعم! الاستدامة هي جوهر مهمتنا. تغليفنا قابل لإعادة التدوير بنسبة 100% وقابل للتحلل. في الواقع، يمكن زراعة مواد التغليف لدينا لتنمو منها زهور برية، مما يساهم في اقتصاد دائري.',
+
+      q14: 'كيف تدعم ريتش فود الاستدامة؟',
+      a14: 'نستخدم مكونات محلية المصدر حيثما أمكن، ونقلل من هدر الطعام من خلال الحصص الدقيقة، وتغليفنا مصمم ليكون جزءاً من النظام البيئي الطبيعي. نحن ملتزمون بتقليل تأثيرنا البيئي في كل خطوة من الإنتاج.',
+
+      q15: 'ما هي مهمتكم؟',
+      a15: 'مهمتنا هي جعل الوجبات المغذية والساخنة متاحة للجميع، في كل مكان - بغض النظر عن الظروف. بدأنا بمعالجة انعدام الأمن الغذائي في مدغشقر ونواصل ابتكار حلول للإغاثة الطارئة والمهنيين المشغولين والعائلات في جميع أنحاء العالم.',
+
+      stillHaveQuestions: 'لا تزال لديك أسئلة؟',
+      contactSupport: 'فريق الدعم لدينا هنا للمساعدة. تواصل معنا في أي وقت.',
+      contactUs: 'تواصل معنا',
+      browseProducts: 'تصفح منتجاتنا',
     },
   },
 };

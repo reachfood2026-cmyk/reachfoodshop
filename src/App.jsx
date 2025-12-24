@@ -8,6 +8,7 @@ import Shop from './pages/Shop'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Partner from './pages/Partner'
+import FAQ from './pages/FAQ'
 import ProductCheckout from './pages/ProductCheckout'
 import Checkout from './pages/Checkout'
 import OrderConfirmation from './pages/OrderConfirmation'
@@ -29,6 +30,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/partner" element={<Partner />} />
+          <Route path="/faq" element={<FAQ />} />
         </Routes>
       </div>
 
